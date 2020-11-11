@@ -30,7 +30,7 @@ if (process.env.ENVIRONMENT === "prod") {
   });
 }
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true });
 console.log("MongoDB connected");
 
 mongoose.set("useFindAndModify", false);
