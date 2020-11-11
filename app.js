@@ -13,7 +13,7 @@ var dotenv = require("dotenv").config(),
   User = require("./models/user"),
   session = require("express-session"),
   moment = require("moment"),
-  seedDB = require("./seeds"),
+  // seedDB = require("./seeds"),
   // requiring routes
   commentRoutes = require("./routes/comments"),
   topicRoutes = require("./routes/topics"),
@@ -58,7 +58,6 @@ app.use(
 app.use(flash());
 
 app.locals.moment = require("moment");
-//seedDB();
 
 app.use(passport.initialize());
 app.use(passport.session());

@@ -2,8 +2,8 @@
   "name": "roam-app",
   "version": "1.0.0",
   "engines": {
-    "node": "10.5.0",
-    "npm": "6.2.0"
+    "node": "14.15.0",
+    "npm": "6.14.8"
   },
   "description": "central app for all things Roam",
   "main": "app.js",

@@ -30,7 +30,7 @@
         <div class="col-sm-12">
             <div class="text-center">
                     <% if(currentUser && topic.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
-                        <a class="btn btn-xs btn-warning" href="/topics/<%= topic._id %>/edit">Edit</a>
+                        <a class="btn btn-xs btn-warning" href="/topics/<%= topic._id %>/edit" style="margin: 20px;">Edit</a>
                         <form class="delete-form" action="/topics/<%= topic._id %>?_method=DELETE" method="POST"
                             onsubmit="return confirm('Are You Sure You Want To Delete This?');">
                         <button class="btn btn-xs btn-danger">Delete</button>
@@ -68,7 +68,7 @@
                             </p>
                     <% if(currentUser && comment.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
                             <a class="btn btn-xs btn-warning" 
-                            href="/topics/<%= topic._id %>/comments/<%= comment._id %>/edit">
+                            href="/topics/<%= topic._id %>/comments/<%= comment._id %>/edit" style="margin-bottom: 20px;">
                             Edit</a>
                             <form class="delete-form" action="/topics/<%= topic._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST"
                                 onsubmit="return confirm('Are You Sure You Want To Delete This?');">
