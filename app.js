@@ -83,15 +83,6 @@ app.get("/rock-landing", function (req, res) {
   res.render("rock-landing");
 });
 
-// // rock-school-about
-// app.get('/rock-school-about', function(req, res){
-//     res.render('rockschoolabout');
-// });
-
-// app.listen(process.env.PORT, process.env.IP, function () {
-//     console.log("The roam-app server has started");
-// });
-
 if (process.env.ENVIRONMENT === "prod") {
   // sets port 8080 to default or unless otherwise specified in the environment
   app.set("port", process.env.PORT || 80);
