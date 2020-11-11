@@ -1,0 +1,49 @@
+.post {
+    padding: 10px;
+}
+
+.date {
+    padding: 10px;
+}
+
+#lessons-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+body {
+	background:url("#");
+	background-color: #FFFF;
+}
+
+.navbar {
+	background-color: #000000;
+	border-top: none;
+	border-bottom: none;
+}
+
+.dropdown-menu {
+	background-color: #000000;
+	border: none;
+	
+}
+
+.navbar-header {
+    float: none;
+}
+.navbar-toggle {
+    display: block;
+}
+.navbar-collapse.collapse {
+    display: none!important;
+}
+.navbar-collapse.collapse.in {
+    display: block!important;
+}
+.navbar-nav {
+    float: right!important;
+}
+.navbar-nav>li {
+    float: none;
+}

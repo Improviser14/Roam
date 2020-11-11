@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rock of Ages Music</title>  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/stylesheets/lessons.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- bootstrap 3.0.3 JS, JQuery and its dependencies -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+       
+      <!--custom JS -->
+      <!--<script src='main.js'></script>-->
+   </head>
+    
+    <body>
+    
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><p>
+          <span class="glyphicon">&#xe021;</span>
+         </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li id="web-app"><a href="/topics">roamHangout</a></li>
+            
+        
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programs<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/school.html">Rock School</a></li>
+                <li><a href="/lessons.html">Private Lessons</a></li>
+                <li><a href="/contact">Contact Us Form</a></li><!--ejs -->
+              </ul>
+            </li>
+              	<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Community<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Friends of Roam Foundation</a></li>
+                <li><a href="http://www.visitdelray.com">Del Ray</a></li>
+                <li><a href="https://www.birchmere.com">The Birchmere</a></li>
+                <li><a href="http://www.thestatetheatre.com/index.xml">The State Theatre</a></li>
+                <li><a href="http://www.artontheavenue.org/">Art on the Avenue</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Social Media<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="socialmediaicons"><a href="https://www.youtube.com/watch?v=0gh_dgK60KE" class="fa fa-youtube socialmediaicons fa-youtube"></a></li>
+                <li class="socialmediaicons"><a href="https://www.facebook.com/ROAMusicCo/" class="fa fa-facebook socialmediaicons fa-facebook"></a></li>
+                <li class="socialmediaicons"><a href="https://twitter.com/ROAMava" class="fa fa-twitter socialmediaicons fa-twitter"></a></li>
+                <li class="socialmediaicons"><a href="https://www.instagram.com/rockofagesmusic/" class="fa fa-instagram socialmediaicons fa-instagram"></a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Instructor's External Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.amazon.com/Music-Theory-Manual-Christopher-Galvan-ebook/dp/B00BL52GGE">Chris Galvan</a></li>
+            <li><a href="http://whileheavenwept.bandcamp.com">Tom Phillips</a></li>
+            <li><a href="http://erin-flynn.com">Erin Flynn</a></li>
+            <li><a href="http://jackkilbymusic.com">Jack Kilby</a></li>
+           
+          </ul>
+        </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    
+
+    
+  <div title="text" id="lessons-header" >
+    <h1 class="display-1">Private Lessons</h1>
+      <p class="lead">Rock of Ages Music</p>
+      	<a href="/contact" class="btn btn-lg btn-success">Schedule Lessons</a>
+  </div> 
+
+  <div id="lessons-header-2">
+    <p class="lead">All ages and experience levels (see specific teacher for exceptions below).</p>
+    <p class="lead">Most instructors teach popular music in addition to their specialties below.</p>
+  	<p class="lead">Lessons are billed on the 1st of each month at the following weekly rates:</p>
+    <p class="lead">30 min = $40 per week</p>
+    <p class="lead">45 min = $57 per week</p>
+    <p class="lead">60 min = $80 per week</p>
+  </div>
+
+<div class="container">
+	<div class="row flex">
+    <div class="col-lg-4 col-sm-6">
+      <div class="thumbnail">
+    		<h3 class="text-center">John Patrick</h3>
+				<h4 class="text-center">Roam founder, rock school</h4>
+        <div class="panel-body panpad">
+          <div class="ft-item">
+            <span class="ft-image">
+              <img class="img-responsive"src="https://images.unsplash.com/photo-1461784121038-f088ca1e7714?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fdb6ebf5fff5c45057753ff1191fa0be&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+            </span>
+            <div class="ft-data">
+              <a class="text-upper" href="#"><h5 class="itemh5">Founding member of critically acclaimed band Virginia Coalition</h5>
+              <h5 class="itemh5">10 years of teaching experience</h5>
+              <h5 class="itemh5">Age requirements: none</h5>
+              </a>
+            </div>
+                <div class="ft-foot-ex">
+            </div>
+          </div>
+      </div>
+  </div>
+  </div>
+   
+	  <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Chris Galvan</h3>
+  				<h4 class="text-center">guitar, electric bass, web design & development</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1445743432342-eac500ce72b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a75b52f1402d260bc387f986992ef602&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">B.M. Berklee College of Music</h5>
+                <h5 class="itemh5"> 25 years of teaching experience</h5>
+                <h5 class="itemh5"> Author: Music Theory Field Manual</h5>
+                <h5 class="itemh5">Specialties: jazz, fusion, blues, rock, free-improvisational concepts, rhythmic feel, college prep</h5>
+                <h5 class="itemh5">Age requirements: 8 yrs old +</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+    
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Tom Phillips</h3>
+  				<h4 class="text-center">guitar, electric bass, rock school</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1506091403742-e3aa39518db5?ixlib=rb-0.3.5&s=0375689057b17233892dd1dd7c167b8d&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">International recording artist with acts such as: While Heaven Wept,
+                Walpyrgus, Solstice, Twisted Tower Dire, Brave and others</h5>
+                <h5 class="itemh5">25 years of teaching experience</h5>
+                <h5 class="itemh5">Specialties: rock, metal, post-rock, electronic, classical, fusion</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a>
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Jack Kilby</h3>
+  				<h4 class="text-center">drums, guitar, piano, trumpet, ukulele</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1512053459797-38c3a066cabd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=44bbc35d10a654754c36ec39dda6bc9b&auto=format&fit=crop&w=1500&q=80" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">M.M. Aaron Copland School of Music
+                <br>B.S. University of Virginia</h5>
+                <h5 class="itemh5">10 Years of teaching experience</h5>
+                <h5 class="itemh5">Specialties: jazz, improvisational concepts</h5>
+                <h5 class="itemh5">Age requirements: 8 yrs old +</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+   
+    
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Kareem Darwish</h3>
+  				<h4 class="text-center">guitar, electric bass, ukulele, mandolin, banjo</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1533464826937-8876cc53ab92?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2b78eb1ba74f9fffd3f53ecdadc1cfe8&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">Five Towns College of Music</h5>
+                <h5 class="itemh5"> 20 years of teaching experience</h5>
+                <h5 class="itemh5">Performances with: Dimension 6, Scott Harlan Band</h5>
+                <h5 class="itemh5">Specialties: rock, metal, funk, blues, reggae, classical, fusion</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Alexandra Fessenko</h3>
+  				<h4 class="text-center">piano, voice</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1485561222814-e6c50477491b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d21120da4fcc4c480b60953723c7e4ac&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">Artist Diploma Prague Conservatoire of Music
+                <br>B.A. Prokofiev College of Music</h5>
+                <h5 class="itemh5">17 years of teaching experience</h5>
+                <h5 class="itemh5">Specialties: classical, rock, jazz, music theater, experimental music, public speech</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+    
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Erin Flynn</h3>
+  				<h4 class="text-center">violin, viola, piano, hammered dulcimer</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="http://mathomhouse.typepad.com/.a/6a00d83452615669e201b8d0a807ef970c-pi" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">M.A. University of Maryland<br> B.M. University of Delaware</h5>
+                <h5 class="itemh5">10 Years of teaching experience<br>5 years Alexandria Public Schools</h5>
+                <h5 class="itemh5">Specialties: classical, Irish & Scottish fiddling</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div> 
+  
+      <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Rick Irby</h3>
+  				<h4 class="text-center">guitar, electric bass, drums, rock school</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1472390155757-7704d54b9dc7?ixlib=rb-0.3.5&s=409cc81270a97bbdb9c74f0bd03cc3ac&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">Music Education/relevent experience</h5>
+                <h5 class="itemh5">Years of teaching experience</h5>
+                <h5 class="itemh5">Specialties/styles</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a>
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Debbie Smith</h3>
+  				<h4 class="text-center">violin, viola, piano, voice</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1460036521480-ff49c08c2781?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bc603844eab993ac7aac806bbc2f5ad2&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+              <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">George Mason University<br>(3rd year student)</h5>
+                <h5 class="itemh5">7 years of teaching experience</h5>
+                <h5 class="itemh5">Performances with: The United Medical Symphony and local area jazz and rock groups</h5>
+                <h5 class="itemh5">Specialties: classical, Broadway voice</h5>
+                <h5 class="itemh5">Age requirements: 6 yrs old +</h5>
+                </a>
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Mark Deffenbaugh</h3>
+  				<h4 class="text-center">piano, drums, guitar</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1476287803067-f714aa78eaa7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=598f57138debd405d970a7030e91271c&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+              <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">B.M. Berklee College of Music</h5>
+                <h5 class="itemh5">Former musical director of the Ben E. King Foundation</h5>
+                <h5 class="itemh5">Performances with: The Manhattans, The Dells, Chuck Jackson and many others </h5>
+                <h5 class="itemh5">Musser Ludwig Artist for 15 years</h5>
+                <h5 class="itemh5">Specialties: jazz, rock, soul, R & B </h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a>
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+    
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Alejandro Lucini</h3>
+  				<h4 class="text-center">drums, percussion</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1525261825572-8aa16822a663?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba71034a18fc825bbae05f438e19624a&auto=format&fit=crop&w=1510&q=80" alt="featured Scroller" draggable="false">
+              </span>
+              <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">Music Education/relevent experience</h5>
+                <h5 class="itemh5">Years of teaching experience</h5>
+                <h5 class="itemh5">Specialties/styles</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a>
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Amy Reiff</h3>
+  				<h4 class="text-center">piano, voice, ukulele</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://images.unsplash.com/photo-1523713947078-b1787c791b96?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9c10ca721048e5a3cdf243aaa0ee4980&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">M.M., B.M. Kent State University</h5>
+                <h5 class="itemh5"> 30 years of teaching experience</h5>
+                <h5 class="itemh5"> George Washington University faculty</h5>
+                <h5 class="itemh5">Specialties: classical, popular ukulele music</h5>
+                <h5 class="itemh5">ukulele, piano, voice, group classes for kids and adults</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+    
+    <div class="col-lg-4 col-sm-6">
+        <div class="thumbnail">
+      		<h3 class="text-center">Missy Pankow</h3>
+  				<h4 class="text-center">clarinet</h4>
+          <div class="panel-body panpad">
+            <div class="ft-item">
+              <span class="ft-image">
+                <img class="img-responsive"src="https://music.asu.edu/sites/default/files/clarinet_choir.jpg" alt="featured Scroller" draggable="false">
+              </span>
+             <div class="ft-data">
+                <a class="text-upper" href="#"><h5 class="itemh5">M.M. Bowling Green State University B.M. James Madison University</h5>
+                <h5 class="itemh5">15 years of teaching experience</h5>
+                <h5 class="itemh5">Specialties: classical (20th & 21st century), chamber music</h5>
+                <h5 class="itemh5">Age requirements: none</h5>
+                </a> 
+              </div>
+                  <div class="ft-foot-ex">
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+  
+  <!--    <div class="col-lg-4 col-sm-6">-->
+  <!--      <div class="thumbnail">-->
+  <!--    		<h3 class="text-center">Gregg Smith</h3>-->
+  <!--				<h4 class="text-center">rock school</h4>-->
+  <!--        <div class="panel-body panpad">-->
+  <!--          <div class="ft-item">-->
+  <!--            <span class="ft-image">-->
+  <!--              <img class="img-responsive"src="https://images.unsplash.com/photo-1487702232819-65ae859daf8a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a3c16d1e640842aac321a3be07ec4264&auto=format&fit=crop&w=1500&q=80" alt="featured Scroller" draggable="false">-->
+  <!--            </span>-->
+  <!--           <div class="ft-data">-->
+  <!--              <a class="text-upper" href="#"><h5 class="itemh5">Diploma, Berklee College of Music</h5>-->
+  <!--              <h5 class="itemh5"> 10 years of teaching experience</h5>-->
+  <!--              <h5 class="itemh5"> Performances with: Above the Silence, Shade Parade</h5>-->
+  <!--              <h5 class="itemh5">Specialties: rock, alt rock</h5>-->
+  <!--              <h5 class="itemh5">Age requirements: none</h5>-->
+  <!--              </a> -->
+  <!--            </div>-->
+  <!--                <div class="ft-foot-ex">-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--    </div>-->
+  <!--</div>-->
+  <!--</div>-->
+  
+  <!--  <div class="col-lg-4 col-sm-6">-->
+  <!--      <div class="thumbnail">-->
+  <!--    		<h3 class="text-center">Adam Orlando</h3>-->
+  <!--				<h4 class="text-center">rock school</h4>-->
+  <!--        <div class="panel-body panpad">-->
+  <!--          <div class="ft-item">-->
+  <!--            <span class="ft-image">-->
+  <!--              <img class="img-responsive"src="https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbaaf356e5f8bb5623631bf7f5f37b91&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">-->
+  <!--            </span>-->
+  <!--           <div class="ft-data">-->
+  <!--              <a class="text-upper" href="#"><h5 class="itemh5">Performances with: RDGLDGRN, Gordon Sterling and the People, Lightfoot</h5>-->
+  <!--              <h5 class="itemh5">3 years of teaching experience</h5>-->
+  <!--              <h5 class="itemh5">Age requirements: none</h5>-->
+  <!--              </a> -->
+  <!--            </div>-->
+  <!--                <div class="ft-foot-ex">-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--    </div>-->
+  <!--</div>-->
+  <!--</div>-->
+  
+  <!--  <div class="col-lg-4 col-sm-6">-->
+  <!--      <div class="thumbnail">-->
+  <!--    		<h3 class="text-center">Davey Hoen</h3>-->
+  <!--				<h4 class="text-center">rock school</h4>-->
+  <!--        <div class="panel-body panpad">-->
+  <!--          <div class="ft-item">-->
+  <!--            <span class="ft-image">-->
+  <!--              <img class="img-responsive"src="https://images.unsplash.com/photo-1530801581336-461393c96e41?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=80778bdc9c99af4b892f8cddcb161f66&auto=format&fit=crop&w=800&q=60" alt="featured Scroller" draggable="false">-->
+  <!--            </span>-->
+  <!--           <div class="ft-data">-->
+  <!--              <a class="text-upper" href="#"><h5 class="itemh5">Music Education/relevent experience</h5>-->
+  <!--              <h5 class="itemh5"> Years of teaching experience</h5>-->
+  <!--              <h5 class="itemh5">Specialties/styles</h5>-->
+  <!--              <h5 class="itemh5">Age requirements: none</h5>-->
+  <!--              </a> -->
+  <!--            </div>-->
+  <!--                <div class="ft-foot-ex">-->
+  <!--            </div>-->
+  <!--        </div>-->
+  <!--    </div>-->
+  <!--</div>-->
+  <!--</div>-->
+  
+
+  </div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+
+</html>

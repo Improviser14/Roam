@@ -1,0 +1,87 @@
+<% include ../partials/header %>
+
+<div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-md-12">
+            <p class="lead"><%= topic.name %></p>
+        </div>
+        
+        <div class="col-md-12">
+            <div class="row">
+            <div class="thumbnail">
+                <img class="img-responsive" src="<%= topic.image %>">
+                <div class="caption-full">
+            </div>        
+            
+            
+                
+<div class="well">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="text-center">
+            <div class="col-md-12">
+            <div class="list-group">
+                <li class="list-group-item list-group-item-info"><h5><em><%= topic.name %></em></h5></li>
+                <li class="list-group-item" id="topic-decription"><%= topic.description %></li>
+                <li class="list-group-item"><em>Submitted by: <%= topic.author.username %>, <%= moment(topic.createdAt).fromNow() %></em></li>
+            <div class="well">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="text-center">
+                    <% if(currentUser && topic.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+                        <a class="btn btn-xs btn-warning" href="/topics/<%= topic._id %>/edit">Edit</a>
+                        <form class="delete-form" action="/topics/<%= topic._id %>?_method=DELETE" method="POST"
+                            onsubmit="return confirm('Are You Sure You Want To Delete This?');">
+                        <button class="btn btn-xs btn-danger">Delete</button>
+                        </form>
+                    <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+        
+            
+            <div class="well">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="text-center">
+                            <a id="comment-button" class="btn btn-info" href="/topics/<%= topic._id %>/comments/new">add a comment to
+                            <div><%= topic.name %></div></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <% topic.comments.forEach(function(comment){ %>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <strong><%= comment.author.username %></strong>
+                            <span class="pull-right"><%= moment(comment.createdAt).fromNow() %></span>
+                            <p>
+                               <%= comment.text %>
+                            </p>
+                    <% if(currentUser && comment.author.id.equals(currentUser._id) || currentUser && currentUser.isAdmin){ %>
+                            <a class="btn btn-xs btn-warning" 
+                            href="/topics/<%= topic._id %>/comments/<%= comment._id %>/edit">
+                            Edit</a>
+                            <form class="delete-form" action="/topics/<%= topic._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST"
+                                onsubmit="return confirm('Are You Sure You Want To Delete This?');">
+                                 <button class="btn btn-xs btn-danger custombtn1">Delete</button>
+                            </form>
+                        <% } %>
+                        </div>
+                    </div>
+                 <% }) %>
+            </div>
+            <a href="/topics" class="btn btn-info btn-md active" role="button" aria-pressed="true">back to topics</a>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer %>

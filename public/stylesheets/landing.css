@@ -1,0 +1,359 @@
+/*ordered by specificity with child elements inside(myz*/
+body {
+  background: url("../images/roamsoundwaves.jpg");
+  background-color: #e8e8e8;
+  font-family: futura;
+}
+
+/*YELP CAMP UI IMPROVEMENT BACKGROUND SLIDER*/
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 15s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://images.unsplash.com/photo-1520166012956-add9ba0835cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1dc4c415c3096ec0d707eb702f9361ad&auto=format&fit=crop&w=668&q=80);
+  /*animation-delay: 5s;*/
+}
+
+.slideshow li:nth-child(2) {
+  background-image: url("./images/landingPage2.png");
+  animation-delay: 3s;
+}
+
+.slideshow li:nth-child(2) {
+  background-image: url(https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bdf4710e39387546314ddd3ea0640f39&auto=format&fit=crop&w=1500&q=80);
+  animation-delay: 6s;
+}
+
+.slideshow li:nth-child(3) {
+  background-image: url(https://images.unsplash.com/photo-1511044287905-703f02523985?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8f278c6b757586a6f9b93f07156f1bdf&auto=format&fit=crop&w=800&q=80);
+  animation-delay: 9s;
+}
+
+.slideshow li:nth-child(4) {
+  background-image: url(https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-0.3.5&s=2f6c6318d3d5051b820bb5382e3f6952&auto=format&fit=crop&w=1500&q=80);
+  animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+/*.no-cssanimations .slideshow li {*/
+/*	opacity: 1;*/
+/*}*/
+
+/*end YELPCAMP CSS*/
+
+html {
+  height: 100%;
+}
+
+.navbar {
+  background-color: #000000;
+  border-top: none;
+  border-bottom: none;
+  z-index: 2;
+}
+
+.dropdown-menu {
+  border: none;
+  background-color: #000000;
+}
+
+/*THESE RULES MAKE THE NAVBAR COLLAPSE TO A HAMBURGER EVEN ON FULL SCREENS AND PUTS THE DROPDOWN ON THE RIGHT*/
+/*.navbar-header {*/
+/*    float: none;*/
+/*}*/
+/*.navbar-toggle {*/
+/*    display: block;*/
+/*}*/
+/*.navbar-collapse.collapse {*/
+/*    display: none!important;*/
+/*}*/
+/*.navbar-collapse.collapse.in {*/
+/*    display: block!important;*/
+/*}*/
+/*.navbar-nav {*/
+/*    float: right!important;*/
+/*}*/
+/*.navbar-nav>li {*/
+/*    float: none;*/
+/*}*/
+
+#content {
+  text-align: center;
+  padding-top: 15%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.5);
+  font-size: large;
+}
+
+h2 {
+  border-bottom: none;
+}
+
+h2:hover {
+  color: #cc6aff;
+  border-bottom: 2px solid #cc6aff;
+  transition: all 0.5s ease-in;
+  padding: 10px;
+}
+
+.nav li {
+  background-color: #000000;
+}
+
+#roam {
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.5);
+}
+
+.socialmediaicons {
+  width: 100px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.row {
+  border: 0;
+}
+
+.navbar-brand a {
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #cc6aff;
+  border-bottom: 2px solid #0ad8eb;
+  transition: all 0.5s ease-in;
+  padding: 10px;
+}
+
+/* .display-1:hover {
+	color: #0ad8eb;
+	transition: all 0.7s ease-in;
+} */
+
+.nav li a:hover {
+  color: #0ad8eb;
+  background-color: inherit;
+  border-bottom: 2px solid #0ad8eb;
+  transition: all 0.5s ease-in;
+  padding: 10px;
+}
+
+#outer-circle {
+  border: 1px solid greenyellow;
+  height: 250px;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  width: 250px;
+  padding: 22px;
+  margin: auto;
+}
+
+#inner-circle {
+  border: 1px solid greenyellow;
+  height: 200px;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  width: 200px;
+  margin: auto;
+}
+
+#LogoMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.LeadButtons {
+  padding-top: 20px;
+}
+
+#CenterLogo {
+  color: white;
+  padding: 25px;
+  text-decoration: underline;
+}
+
+#roams {
+  font-size: 15px;
+  color: #fff;
+}
+
+/* #roams:hover {
+	font-size: 25px;
+	color: #0ad8eb;
+	transition: all 0.7s ease-in;
+} */
+
+/*.knob-base {*/
+
+/*  border: 0px solid black;*/
+/*  border-radius: 100%;*/
+/*  width: 260px;*/
+/*  height: 260px;*/
+/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
+/*  background-repeat: no-repeat;*/
+/*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
+/*  z-index: 1000;*/
+/*  margin-left: -125px;*/
+/*  margin-right: -125px;*/
+/*}*/
+
+/*.knob-base .edge {*/
+/*  border: 1px solid black;*/
+/*  border-radius: 100%;*/
+
+/*  width: 200px;*/
+/*  height: 200px;*/
+/*  background-color: rgba(0,0,0,0.45);*/
+/*  box-shadow: 0px 0px 10px 2px #000 inset;*/
+/*}*/
+
+/*.knob-base .edge .knob {*/
+/*  border: 0px solid black;*/
+/*  border-radius: 100%;*/
+/*  width: 200px;*/
+/*  height: 200px;*/
+/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
+/*  background-size: 100%;*/
+/*  background-repeat: no-repeat;*/
+/*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
+/*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
+/*  z-index: 1000*/
+/*}*/
+
+/*.knob .center {*/
+/*  border-radius: 100%;*/
+/*  border: 1px solid rgba(255,255,255,0.75);*/
+/*  width: 189px;*/
+/*  height: 189px;*/
+/*  left: 4px;*/
+/*  top: 4px;*/
+/*  visibility: show;*/
+/*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
+
+/*}*/
+
+/*.knob .center .led {*/
+/*  border: 1px solid #0af;*/
+/*  border-radius: 4px;*/
+/*  width: 6px;*/
+/*  height: 26px;*/
+/*  position: absolute;*/
+/*  bottom: 10px;*/
+
+/*  background-color: #0df;*/
+/*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
+/*}*/
+
+/*.knob-base {*/
+/*  top: 13px;*/
+/*  border: 0px solid black;*/
+/*  border-radius: 100%;*/
+/*  width: 260px;*/
+/*  height: 260px;*/
+/*  position: relative;*/
+/*  left: 50%;*/
+/*  right: 50%;*/
+
+/*  background-image: url("http://static.freepik.com/free-photo/brushed-metal_21275858.jpg");*/
+/* -webkit-background-size: 100%;*/
+/*  background-repeat: no-repeat;*/
+/*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
+/*  z-index: 1000;*/
+
+/*}*/
+/*.knob-base .edge {*/
+/*  border: 1px solid black;*/
+/*  border-radius: 100%;*/
+/*  position: relative;*/
+/*  width: 220px;*/
+/*  height: 220px;*/
+/*  left: 20px;*/
+/*  top: 20px;*/
+/*  background-color: rgba(0,0,0,0.45);*/
+/*  box-shadow: 0px 0px 10px 2px #000 inset;*/
+/*}*/
+/*.knob-base .edge .knob {*/
+/*  border: 0px solid black;*/
+/*  border-radius: 100%;*/
+/*  position: relative;*/
+/*  width: 200px;*/
+/*  height: 200px;*/
+/*  left: 10px;*/
+/*  top: 10px;*/
+/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
+/*  background-size: 100%;*/
+/*  background-repeat: no-repeat;*/
+/*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
+/*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
+/*  z-index: 1000*/
+/*}*/
+/*.knob .center {*/
+/*  position: absolute;*/
+/*  border-radius: 100%;*/
+/*  border: 1px solid rgba(255,255,255,0.75);*/
+/*  width: 189px;*/
+/*  height: 189px;*/
+/*  left: 4px;*/
+/*  top: 4px;*/
+/*  visibility: show;*/
+/*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
+
+/*}*/
+/*.knob .center .led {*/
+/*  border: 1px solid #0af;*/
+/*  border-radius: 4px;*/
+/*  width: 6px;*/
+/*  height: 26px;*/
+/*  position: absolute;*/
+/*  bottom: 10px;*/
+/*  left: 50%;*/
+/*  background-color: #0df;*/
+/*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
+/*}*/
