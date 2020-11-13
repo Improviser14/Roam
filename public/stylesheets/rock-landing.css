@@ -5,7 +5,6 @@ body {
 	font-family: futura;
 }
 
-/*YELP CAMP UI IMPROVEMENT BACKGROUND SLIDER*/
 .slideshow { 
   position: fixed;
   width: 100%;
@@ -185,6 +184,47 @@ h2:hover {
 	border-bottom:2px solid #0ad8eb;
 	transition:all 0.5s ease-in;
 	padding:10px;
+}
+
+#outer-circle {
+  border: 1px solid greenyellow;
+  height: 250px;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  width: 250px;
+  padding: 22px;
+  margin: auto;
+}
+
+#inner-circle {
+  border: 1px solid greenyellow;
+  height: 200px;
+  -moz-border-radius: 190px;
+  -webkit-border-radius: 190px;
+  width: 200px;
+  margin: auto;
+}
+
+#LogoMain {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+	
+}
+
+#CenterLogo {
+  color: white;
+  padding: 25px;
+  text-decoration: underline;
+}
+
+.LeadButtons {
+  padding-top: 20px;
+}
+
+#roams {
+  font-size: 15px;
+  color: #fff;
 }
 
 .display-1 {
