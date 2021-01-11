@@ -32,8 +32,10 @@ if (process.env.ENVIRONMENT === "prod") {
 
 mongoose.connect(
   process.env.DATABASE_URL,
-  { useNewUrlParser: true },
-  { useUnifiedTopology: true }
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }
 );
 console.log("MongoDB connected");
 
