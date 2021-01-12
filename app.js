@@ -83,6 +83,7 @@ app.use("/topics", topicRoutes);
 app.use("/topics/:id/comments", commentRoutes);
 app.use("/contact", contactRoutes);
 
+
 // rock-landing.ejs
 app.get("/rock-landing", function (req, res) {
   res.render("rock-landing");
