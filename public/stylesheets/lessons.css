@@ -4,6 +4,10 @@
   position: relative;
 }
 
+#rock_school_h1 {
+  padding-bottom: 30px;
+}
+
 .itemh5 {
   color: #fff;
   font-size: 15px;
