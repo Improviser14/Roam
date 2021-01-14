@@ -184,7 +184,7 @@ h2:hover {
 }
 
 #outer-circle {
-  border: 1px solid greenyellow;
+  border: 5px solid white;
   height: 250px;
   -moz-border-radius: 190px;
   -webkit-border-radius: 190px;
@@ -194,10 +194,10 @@ h2:hover {
 }
 
 #inner-circle {
-  border: 1px solid greenyellow;
+  border: 2px solid white;
   height: 200px;
-  -moz-border-radius: 190px;
-  -webkit-border-radius: 190px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
   width: 200px;
   margin: auto;
 }
@@ -210,16 +210,31 @@ h2:hover {
 
 .LeadButtons {
   padding-top: 20px;
+ 
+}
+
+.roamLogoMain{
+  color:white;
+}
+
+a {
+  color: white;
+  background-color:black;
 }
 
 #CenterLogo {
   color: white;
-  padding: 25px;
-  text-decoration: underline;
+  padding: 10px;
+  padding-top: 30px;
+  /* text-decoration: underline; */
 }
 
-#roams {
-  font-size: 15px;
+#roams1 {
+  text-decoration: overline;
+  color: #fff;
+}
+
+#roams2 {
   color: #fff;
 }
 
