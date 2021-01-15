@@ -81,8 +81,6 @@ body {
 /*	opacity: 1;*/
 /*}*/
 
-
-
 html {
   height: 100%;
 }
@@ -193,6 +191,20 @@ h2:hover {
   margin: auto;
 }
 
+#mini-logo {
+  height: 100px;
+  width: 100px;
+}
+/* #outer-circle-mini {
+  border: 2px solid white;
+  height: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  width: 100px;
+  padding: 20px;
+  margin: auto;
+} */
+
 #inner-circle {
   border: 2px solid white;
   height: 200px;
@@ -210,16 +222,15 @@ h2:hover {
 
 .LeadButtons {
   padding-top: 20px;
- 
 }
 
-.roamLogoMain{
-  color:white;
+.roamLogoMain {
+  color: white;
 }
 
 a {
   color: white;
-  background-color:black;
+  background-color: black;
 }
 
 #CenterLogo {
