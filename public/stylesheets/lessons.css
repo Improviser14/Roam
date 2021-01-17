@@ -152,7 +152,9 @@
 
 
 
-/*img-responsive {
+.LeadButtons {
+  padding-top: 20px;
+}
   width: 260px;
   object-fit: cover;
 }
