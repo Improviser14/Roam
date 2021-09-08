@@ -21,7 +21,7 @@ router.post("/send", function (req, res) {
 
   var mailOptions = {
     from: "Chris Galvan <pavance40@gmail.com",
-    to: "pavance40@gmail.com ROAM.rockofagesmusic@gmail.com ",
+    to: "pavance40@gmail.com roam.rockofagesmusic@gmail.com ",
     replyTo: req.body.email,
     subject: "Roam contact request from: " + req.body.name,
     text:
