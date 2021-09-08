@@ -13,7 +13,8 @@
   <!-- bootstrap 3.0.3 JS, JQuery and its dependencies -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
   <!--custom JS -->
   <!--<script src='main.js'></script>-->
 </head>
@@ -121,8 +122,8 @@
             <div class="help-block with-errors"></div>
           </div>
           <div class="form-group">
-            <!-- Insert the code for the reCaptcha check box -->
-            <div class="g-recaptcha" data-sitekey=<%=process.env.PUBLIC_RECAPTCHA_API_SECRET %> ></div>
+            <!-- Insert the code for the reCaptcha check box here-->
+            
           </div>
           <div class="form-group">
             <button class="btn btn-lg btn-primary btn-block">send email</button>
