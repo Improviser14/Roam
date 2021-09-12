@@ -16,14 +16,16 @@ router.post("/send", function (req, res) {
     auth: {
       user: "pavance40@gmail.com",
       pass: "ekyuosuofgjnvjod"
+      // user: "roamwebsiteform@gmail.com",
+      // pass: "rtmojofcidqqhfsi"
     }
   });
 
   var mailOptions = {
-    from: "Chris Galvan <pavance40@gmail.com",
+    from: req.body.name + " <roamwebsiteform@gmail.com",
     to: "roam.rockofagesmusic@gmail.com  pavance40@gmail.com",
     replyTo: req.body.email,
-    subject: "Roam contact request from: " + req.body.name,
+    subject: "Roam website request from: " + req.body.name,
     text:
       "You have received an email from... Name: " +
       req.body.name +
