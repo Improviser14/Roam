@@ -14,15 +14,18 @@ router.post("/send", function (req, res) {
   var smtpTransport = nodemailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "pavance40@gmail.com",
-      pass: "ekyuosuofgjnvjod"
-      // user: "roamwebsiteform@gmail.com",
-      // pass: "rtmojofcidqqhfsi"
+      // change user to:  roam.rockofages@gmail.com
+      // change pass to:  passcode from John's setting up app password
+
+      // user: "pavance40@gmail.com",
+      // pass: "ekyuosuofgjnvjod"
+      user: "roam.rockofagesmusic@gmail.com",
+      pass: process.env.GMAILPW1
     }
   });
 
   var mailOptions = {
-    from: req.body.name + " <roamwebsiteform@gmail.com",
+    from: req.body.name + " roamwebsiteform@gmail.com",
     to: "roam.rockofagesmusic@gmail.com  pavance40@gmail.com",
     replyTo: req.body.email,
     subject: "Roam website request from: " + req.body.name,
