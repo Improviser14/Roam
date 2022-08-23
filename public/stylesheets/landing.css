@@ -93,6 +93,9 @@ html {
 }
 
 .dropdown-menu {
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
   border: none;
   background-color: #000000;
 }
@@ -195,6 +198,7 @@ h2:hover {
   height: 100px;
   width: 100px;
 }
+
 /* #outer-circle-mini {
   border: 2px solid white;
   height: 100px;
