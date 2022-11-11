@@ -17,8 +17,8 @@ var dotenv = require("dotenv").config(),
   // requiring routes
   commentRoutes = require("./routes/comments"),
   topicRoutes = require("./routes/topics"),
-  indexRoutes = require("./routes/index"),
-  contactRoutes = require("./routes/contact");
+  indexRoutes = require("./routes/index")
+  // contactRoutes = require("./routes/contact");
 
 //ssl must be configured on the application level --here
 //uncomment this block when deploying see code at the bottom of this file
@@ -81,7 +81,7 @@ app.use(function (req, res, next) {
 app.use("/", indexRoutes);
 app.use("/topics", topicRoutes);
 app.use("/topics/:id/comments", commentRoutes);
-app.use("/contact", contactRoutes);
+// app.use("/contact", contactRoutes);
 
 
 // rock-landing.ejs
