@@ -184,7 +184,7 @@ h2:hover {
   padding: 10px;
 }
 
-#outer-circle {
+/* #outer-circle {
   border: 5px solid white;
   height: 250px;
   -moz-border-radius: 190px;
@@ -192,7 +192,7 @@ h2:hover {
   width: 250px;
   padding: 22px;
   margin: auto;
-}
+} */
 
 #mini-logo {
   height: 100px;
@@ -209,14 +209,14 @@ h2:hover {
   margin: auto;
 } */
 
-#inner-circle {
+/* #inner-circle {
   border: 2px solid white;
   height: 200px;
   -moz-border-radius: 200px;
   -webkit-border-radius: 200px;
   width: 190px;
   margin: auto;
-}
+} */
 
 #LogoMain {
   display: flex;
@@ -239,15 +239,24 @@ a {
 
 #CenterLogo {
   color: white;
+
+  @font-face {
+    font-family: Futura;
+    src: url('.../FuturaStdBold.woff') format("WOFF");
+    font-weight: 600;
+  }
+
   padding: 10px;
   padding-top: 50px;
-  font-size: 100px;
+  padding-bottom: 8px;
+  font-size: 75px;
   /* text-decoration: underline; */
 }
 
 #roams1 {
   text-decoration: overline;
   color: #fff;
+  font-size: 20px;
   margin-top: -15px;
 }
 
