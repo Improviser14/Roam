@@ -246,18 +246,18 @@ a {
     font-weight: 600;
   }
 
-  padding: 10px;
+  /* padding: 10px; */
   padding-top: 50px;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
   font-size: 75px;
   /* text-decoration: underline; */
 }
 
 #roams1 {
-  text-decoration: overline;
+  /* text-decoration: overline; */
   color: #fff;
   font-size: 20px;
-  margin-top: -15px;
+  /* margin-top: -15px; */
 }
 
 #roams2 {
