@@ -5,6 +5,12 @@ body {
   font-family: futura;
 }
 
+@media screen and (max-width: 768px) {
+  #second-poster {
+    padding-top: 10px;
+  }
+}
+
 .slideshow {
   position: fixed;
   width: 100%;
