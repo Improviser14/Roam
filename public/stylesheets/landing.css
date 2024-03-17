@@ -208,8 +208,9 @@ h2:hover {
 } */
 
 #mini-logo {
-  height: 100px;
+  height: 60px;
   width: 100px;
+  padding:10px;
 }
 
 #LogoMain {

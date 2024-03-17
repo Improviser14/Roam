@@ -9,8 +9,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Asap:400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/rock-landing.css">
-
+  <link rel="stylesheet" type="text/css" href="/stylesheets/landing.css">
 
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
   <script type="text/javascript" src="roam.js"></script>
@@ -39,7 +38,10 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
 
-          <li><a href="/"><img src="../images/roam_mini.png" id="mini-logo" /></a></li>
+          <li><a href="/">
+            <img src="../images/roam-logo-no-border.png" id="mini-logo" alt="Roam Logo">
+        </a>
+        </li>
           <!-- </li> -->
 
           <li class="dropdown">
@@ -80,30 +82,59 @@
           <!-- <li><a href="/rock-landing">Rock School</a></li>
           <li><a href="/lessons.html">Private Lessons</a></li> -->
 
-          <!-- REMOVE ROAM HANGOUT FROM NAVIGATION -->
+          <!-- ROAM HANGOUT REMOVED FROM NAVIGATION -->
           <!-- <li id="web-app"><a href="/topics">roamHangout</a></li> -->
-          
+
+
           <li><a href="/whyroam.html">What makes ROAM different?</a></li>
           <!-- <li><a href="/contact">Contact Us</a></li> -->
 
+          <!-- start contact us email block, right before address -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">Contact Us<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry" target="_blank"
-                rel="noopener noreferrer" class="btn btn-med btn-blue">Rock School Inquiries
+              <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry" rel="noopener noreferrer" class="btn btn-med btn-blue">Rock School Inquiries</a> -->
+              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry"
+                class="btn btn-med btn-blue"
+                title="Click to send an email"
+                aria-label="Send email to Rock School Inquiries"
+                target="_blank"
+                rel="noopener noreferrer">
+                Rock School Inquiries
               </a>
-              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Private%20Lesson%20Inquiry" target="_blank"
-                rel="noopener noreferrer" class="btn btn-med btn-blue">Private Lessons Inquiries
+
+
+              <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Private%20Lesson%20Inquiry"
+                rel="noopener noreferrer" class="btn btn-med btn-blue">Private Lesson Inquiries
+              </a> -->
+                <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Private%20Lesson%20Inquiry"
+                class="btn btn-med btn-blue"
+                title="Click to send an email"
+                aria-label="Send email to Private Lesson Inquiries"
+                target="_blank"
+                rel="noopener noreferrer">
+                Private Lesson Inquiries
               </a>
-              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=General%20Inquiry" target="_blank"
+
+              <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=General%20Inquiry"
                 rel="noopener noreferrer" class="btn btn-med btn-blue">Other/General Inquiries
+              </a> -->
+              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=General%20Inquiry"
+                class="btn btn-med btn-blue"
+                title="Click to send an email"
+                aria-label="Send email to Other/General Inquiries"
+                target="_blank"
+                rel="noopener noreferrer">
+                Other/General Inquiries
               </a>
+          <!-- end contact us email block, right before address -->
+
               <a href="https://www.google.com/maps/place/114+E+Del+Ray+Ave,+Alexandria,+VA+22301/@38.8264217,-77.0614346,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b11f81bec3ff:0x65fc216c994ff384!8m2!3d38.8264217!4d-77.0592459"
                 target="_blank" rel="noopener noreferrer" class="btn btn-med btn-blue">114 E Del Ray Ave, Alexandria, VA
                 22301</a>
 
-              <a href="tel:+17038382130" target="_blank" rel="noopener noreferrer" class="btn btn-med btn-blue">(703)
+              <a href="tel:+17038382130" rel="noopener noreferrer" class="btn btn-med btn-blue">(703)
                 838-2130</a>
           </li>
         </ul>
@@ -112,6 +143,7 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
   <ul class="slideshow">
     <li></li>
     <li></li>
@@ -138,28 +170,55 @@
     <div class="row" id="LogoMain">
       <div class="col-lg-12">
         <div id="content">
-          <div id="outer-circle">
-            <div id="inner-circle">
-              <div>
-                <h1 id="CenterLogo">ROAM</h1>
-                <h6 id="roams1">ROCK SCHOOL</h6>
-                <!-- <h5 id="roams2">COMPANY</h5> -->
-              </div>
+         
+          <div>
+            <h1 id="CenterLogo">ROAM</h1>
+            <div>
+              <div class="row staff-logo"
+                style="border-bottom:.2px solid white; margin: auto; width: 50%; padding:.5x;"></div>
+              <div class="row staff-logo"
+                style="border-bottom:.2px solid white; margin: auto; width: 50%; padding:.5px;"></div>
+              <div class="row staff-logo"
+                style="border-bottom:.2px solid white; margin: auto; width: 50%; padding:.5px;"></div>
+              <div class="row staff-logo"
+                style="border-bottom:.2px solid white; margin: auto; width: 50%; padding:.5px;"></div>
+              <div class="row staff-logo"
+                style="border-bottom:.2px solid white; margin: auto; width: 50%; padding:.5px;"></div>
+
             </div>
+            <h6 id="roams1">ROCK OF AGES MUSIC</h6>
           </div>
+          <!-- end logo block -->
+
+          <!-- </div> -->
+          <!-- </div> -->
           <!-- <div>
             <img class="roamLogoMain" src="../images/newest-ROAM-Logo-Final-small-removebg-preview.png">
           </div> -->
           <div class="column-lg-12">
-            <div class="row LeadButtons">
-              <a href="/school.html" class="btn btn-lg btn-dark">Meet our bands
-                <a href="/bandinstructors.html" class="btn btn-lg btn-dark">Meet our Instructors</a>
+            <div class="row leadButtons">
+              <a href="/school.html" class="btn btn-lg btn-dark">Meet Our Bands</a>
+              <a href="/bandinstructors.html" class="btn btn-lg btn-dark">Meet Our Instructors</a>
             </div>
           </div>
+
+          <!-- poster section  -->
+          <!-- <div class="column-lg-12" style="padding-top:40px;padding-bottom: 40px;">
+            <div class="row">
+              <img src="/images/ROAMFEST24-Poster.jpg" style="height:240px; width:240px;" alt="Summer Camp">
+              <img src="/images/ROAMFest-24-2.jpg" style="height:240px; width:240px;" id="second-poster"
+                alt="Summer Camp">
+            </div>
+          </div> -->
+
+        </div>
+
+        <div>
         </div>
       </div>
     </div>
   </div>
+
 
   <script>
     transformation = $(".knob").css("transform");
