@@ -212,6 +212,11 @@ h2:hover {
   width: 100px;
   padding:10px;
 }
+#mini-logo-2 {
+  height: 60px;
+  width: 100px;
+  padding:10px;
+}
 
 #LogoMain {
   display: flex;

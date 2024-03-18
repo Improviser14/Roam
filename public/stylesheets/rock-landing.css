@@ -1,5 +1,5 @@
 /*ordered by specificity with child elements inside(myz*/
-body {
+/* body {
   background: url("../images/roamsoundwaves.jpg");
   background-color: #e8e8e8;
   font-family: futura;
@@ -66,7 +66,7 @@ body {
   30% {
     opacity: 0;
   }
-}
+} */
 
 /* Older browser support - .no-cssanimations class added by modernizr */
 /*.no-cssanimations .slideshow li {*/
@@ -74,7 +74,7 @@ body {
 /*}*/
 
 /*end YELPCAMP CSS*/
-
+/* 
 html {
   height: 100%;
 }
@@ -89,7 +89,7 @@ html {
 .dropdown-menu {
   background-color: #000000;
   border: none;
-}
+} */
 
 /*THESE RULES MAKE THE NAVBAR COLAPSE TO A HAMBURGER EVEN ON FULL SCREENS AND PUTS THE DROPDOWN ON THE RIGHT*/
 /*.navbar-header {*/
@@ -111,7 +111,7 @@ html {
 /*    float: none;*/
 /*}*/
 
-#content {
+/* #content {
   text-align: center;
   padding-top: 50px;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
@@ -210,8 +210,7 @@ h2:hover {
   color: white;
   padding: 10px;
   padding-top: 50px;
-  /* text-decoration: underline; */
-}
+ }
 
 .LeadButtons {
   padding-top: 20px;
@@ -256,132 +255,4 @@ a {
   font-size: 25px;
   color: #0ad8eb;
   transition: all 0.7s ease-in;
-}
-
-/*.knob-base {*/
-
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  width: 260px;*/
-/*  height: 260px;*/
-/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
-/*  z-index: 1000;*/
-/*  margin-left: -125px;*/
-/*  margin-right: -125px;*/
-/*}*/
-
-/*.knob-base .edge {*/
-/*  border: 1px solid black;*/
-/*  border-radius: 100%;*/
-
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*  background-color: rgba(0,0,0,0.45);*/
-/*  box-shadow: 0px 0px 10px 2px #000 inset;*/
-/*}*/
-
-/*.knob-base .edge .knob {*/
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
-/*  background-size: 100%;*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
-/*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
-/*  z-index: 1000*/
-/*}*/
-
-/*.knob .center {*/
-/*  border-radius: 100%;*/
-/*  border: 1px solid rgba(255,255,255,0.75);*/
-/*  width: 189px;*/
-/*  height: 189px;*/
-/*  left: 4px;*/
-/*  top: 4px;*/
-/*  visibility: show;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
-
-/*}*/
-
-/*.knob .center .led {*/
-/*  border: 1px solid #0af;*/
-/*  border-radius: 4px;*/
-/*  width: 6px;*/
-/*  height: 26px;*/
-/*  position: absolute;*/
-/*  bottom: 10px;*/
-
-/*  background-color: #0df;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
-/*}*/
-
-/*.knob-base {*/
-/*  top: 13px;*/
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  width: 260px;*/
-/*  height: 260px;*/
-/*  position: relative;*/
-/*  left: 50%;*/
-/*  right: 50%;*/
-
-/*  background-image: url("http://static.freepik.com/free-photo/brushed-metal_21275858.jpg");*/
-/* -webkit-background-size: 100%;*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 40px 80px rgba(255,255,255,1) inset, 0px 1px 1px #000 inset;*/
-/*  z-index: 1000;*/
-
-/*}*/
-/*.knob-base .edge {*/
-/*  border: 1px solid black;*/
-/*  border-radius: 100%;*/
-/*  position: relative;*/
-/*  width: 220px;*/
-/*  height: 220px;*/
-/*  left: 20px;*/
-/*  top: 20px;*/
-/*  background-color: rgba(0,0,0,0.45);*/
-/*  box-shadow: 0px 0px 10px 2px #000 inset;*/
-/*}*/
-/*.knob-base .edge .knob {*/
-/*  border: 0px solid black;*/
-/*  border-radius: 100%;*/
-/*  position: relative;*/
-/*  width: 200px;*/
-/*  height: 200px;*/
-/*  left: 10px;*/
-/*  top: 10px;*/
-/*  background-image: url("/public/images/brushed-metal_21275858.jpg");*/
-/*  background-size: 100%;*/
-/*  background-repeat: no-repeat;*/
-/*  box-shadow: 0px 2px 4px #fff inset, 0px -2px 4px #000 inset;*/
-/*  -webkit-transform: rotate(00deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);*/
-/*  z-index: 1000*/
-/*}*/
-/*.knob .center {*/
-/*  position: absolute;*/
-/*  border-radius: 100%;*/
-/*  border: 1px solid rgba(255,255,255,0.75);*/
-/*  width: 189px;*/
-/*  height: 189px;*/
-/*  left: 4px;*/
-/*  top: 4px;*/
-/*  visibility: show;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px -1px 2px #000 inset,0px 0px 1px 3px rgba(255,255,255,0.8), 0px 40px 100px 0px rgba(0,0,0,0.75) inset;*/
-
-/*}*/
-/*.knob .center .led {*/
-/*  border: 1px solid #0af;*/
-/*  border-radius: 4px;*/
-/*  width: 6px;*/
-/*  height: 26px;*/
-/*  position: absolute;*/
-/*  bottom: 10px;*/
-/*  left: 50%;*/
-/*  background-color: #0df;*/
-/*  box-shadow: 0px 1px 2px #fff inset, 0px 0px 8px 2px #0af;*/
-/*}*/
+} */ 
