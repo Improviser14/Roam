@@ -99,13 +99,16 @@
   font-size: 20px;
 }
 
-#lessons-header {
+.lessons-header {
   text-align: center;
   padding-bottom: 30px;
 } 
 
-#lessons-header-2 {
+.lessons-header-2 {
   text-align: center;
+  padding: 10px; 
+  font-weight:400;
+  margin-bottom: auto;
 } 
 
 .navbar {
@@ -155,9 +158,9 @@
 .LeadButtons {
   padding-top: 20px;
 }
-  width: 260px;
+  /* width: 260px;
   object-fit: cover;
-}
+} */
  
 
 

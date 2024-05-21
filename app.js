@@ -83,10 +83,28 @@ app.use("/topics", topicRoutes);
 app.use("/topics/:id/comments", commentRoutes);
 // app.use("/contact", contactRoutes);
 
+app.get('/', (req, res) => {
+  // Determine the file extension of the requested URL
+  const fileExtension = path.extname(req.url);
+
+  // Check if the requested URL has .html extension
+  if (fileExtension === '.html') {
+      // If the requested URL has .html extension, send the corresponding HTML file
+      res.sendFile(path.join(__dirname, 'views', 'index.html'));
+  } else {
+      // Render the default EJS template
+      res.render('index');
+  }
+});
 
 // rock-landing.ejs
 app.get("/rock-landing", function (req, res) {
   res.render("rock-landing");
+});
+
+// new-school.ejs
+app.get("/new-school", function (req, res) {
+  res.render("new-school");
 });
 
 if (process.env.ENVIRONMENT === "prod") {
