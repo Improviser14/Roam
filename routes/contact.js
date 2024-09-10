@@ -1,68 +1,69 @@
-var express = require("express"),
-  nodemailer = require("nodemailer"),
-  request = require("request"),
-  router = express.Router();
+// var express = require("express"),
+//   nodemailer = require("nodemailer"),
+//   request = require("request"),
+//   router = express.Router();
 
 // contact form
-router.get("/", function (req, res) {
-  res.render("contact/contactMe", { page: "contact" });
-});
 
-router.post("/send", function (req, res) {
+// router.get("/", function (req, res) {
+//   res.render("contact/contactMe", { page: "contact" });
+// });
+
+// router.post("/send", function (req, res) {
   // reCaptcha code here
 
-  var smtpTransport = nodemailer.createTransport({
-    service: "Gmail",
-    auth: {
+  // var smtpTransport = nodemailer.createTransport({
+  //   service: "Gmail",
+  //   auth: {
       // change user to:  roam.rockofages@gmail.com
       // change pass to:  passcode from John's setting up app password
 
       // user: "pavance40@gmail.com",
       // pass: "ekyuosuofgjnvjod"
-      user: "roam.rockofagesmusic@gmail.com",
-      pass: process.env.GMAILPW1
-    }
-  });
+  //     user: "roam.rockofagesmusic@gmail.com",
+  //     pass: process.env.GMAILPW1
+  //   }
+  // });
 
-  var mailOptions = {
-    from: req.body.name + " roamwebsiteform@gmail.com",
-    to: "roam.rockofagesmusic@gmail.com  pavance40@gmail.com",
-    replyTo: req.body.email,
-    subject: "Roam website request from: " + req.body.name,
-    text:
-      "You have received an email from... Name: " +
-      req.body.name +
-      " Phone: " +
-      req.body.phone +
-      " Email: " +
-      req.body.email +
-      " Message: " +
-      req.body.message,
-    html:
-      "<h3>You have received an email from...</h3><ul><li>Name: " +
-      req.body.name +
-      " </li><li>Phone: " +
-      req.body.phone +
-      " </li><li>Email: " +
-      req.body.email +
-      " </li></ul><p>Message: <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
-      req.body.message +
-      " </p>"
-  };
+//   var mailOptions = {
+//     from: req.body.name + " roamwebsiteform@gmail.com",
+//     to: "roam.rockofagesmusic@gmail.com  pavance40@gmail.com",
+//     replyTo: req.body.email,
+//     subject: "Roam website request from: " + req.body.name,
+//     text:
+//       "You have received an email from... Name: " +
+//       req.body.name +
+//       " Phone: " +
+//       req.body.phone +
+//       " Email: " +
+//       req.body.email +
+//       " Message: " +
+//       req.body.message,
+//     html:
+//       "<h3>You have received an email from...</h3><ul><li>Name: " +
+//       req.body.name +
+//       " </li><li>Phone: " +
+//       req.body.phone +
+//       " </li><li>Email: " +
+//       req.body.email +
+//       " </li></ul><p>Message: <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" +
+//       req.body.message +
+//       " </p>"
+//   };
 
-  smtpTransport.sendMail(mailOptions, function (err, info) {
-    if (err) {
-      console.log(err);
-      req.flash("error", "Something went wrong... Please try again later!");
-      res.redirect("/contact");
-    } else {
-      req.flash(
-        "success",
-        "Your email has been sent, we will respond within 24 hours."
-      );
-      res.redirect("/");
-    }
-  });
-});
+//   smtpTransport.sendMail(mailOptions, function (err, info) {
+//     if (err) {
+//       console.log(err);
+//       req.flash("error", "Something went wrong... Please try again later!");
+//       res.redirect("/contact");
+//     } else {
+//       req.flash(
+//         "success",
+//         "Your email has been sent, we will respond within 24 hours."
+//       );
+//       res.redirect("/");
+//     }
+//   });
+// });
 
-module.exports = router;
+// module.exports = router;
