@@ -2,28 +2,31 @@
 <html>
 
 <head>
-  <meta charset=“UTF-8”>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ROAM</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock of Ages Music</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/lessons.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async>
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Asap:400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/landing.css">
-
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js"></script>
-  <script type="text/javascript" src="roam.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- bootstrap 3.0.3 JS, JQuery and its dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  <!--custom JS -->
+  <!--<script src='main.js'></script>-->
 </head>
 
 <body>
 
-  <nav class="navbar navbar-inverse">
-
+  <nav class="navbar navbar-default">
     <div class="container">
-
-      <!--Brand and toggle get grouped for better mobile display -->
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
           data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -32,178 +35,119 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a href="/"><img src="../images/roam_mini.png" style="width: 100px; height: 100px;" />
+          <!-- <a class="navbar-brand" href="/">
+          <p>
+            <span class="glyphicon">&#xe021;</span>
+        </a> -->
       </div>
 
-      <!--Collect the nav links, forms, and other content for toggling -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
 
-          <li><a href="/" style="display: inline-block; padding: 0;"><img src="../images/roam-logo-no-border.png" id="mini-logo-2" /></a></li>
-          <!-- </li> -->
-
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">Community<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="http://www.friendsofroam.org" target="_blank" rel="noopener noreferrer">Friends of Roam
-                  Foundation</a></li>
-              <li><a href="http://www.visitdelray.com" target="_blank" rel="noopener noreferrer">Del Ray</a></li>
-              <li><a href="https://www.eveningstarcafe.net/" target="_blank" rel="noopener noreferrer">Evening Star/The
-                  No. 9 Lounge</a></li>
-              <li><a href="https://www.unionstage.com/" target="_blank" rel="noopener noreferrer">
-                  Union Stage</a></li>
-              <li><a href="http://www.artontheavenue.org/" target="_blank" rel="noopener noreferrer">Art on the
-                  Avenue</a></li>
-              <li><a href="https://cpg.dev/" target="_blank" rel="noopener noreferrer">CPG Development</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-              aria-expanded="false">Social
-              Media<span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li class="socialmediaicons"><a href="https://www.youtube.com/watch?v=0gh_dgK60KE"
-                  class="fa fa-youtube socialmediaicons fa-youtube" target="_blank" rel="noopener noreferrer"></a></li>
-              <li class="socialmediaicons"><a href="https://www.facebook.com/ROAMusicCo/"
-                  class="fa fa-facebook socialmediaicons fa-facebook" target="_blank" rel="noopener noreferrer"></a>
-              </li>
-              <li class="socialmediaicons"><a href="https://twitter.com/ROAMava"
-                  class="fa fa-twitter socialmediaicons fa-twitter" target="_blank" rel="noopener noreferrer"></a></li>
-              <li class="socialmediaicons"><a href="https://www.instagram.com/roamdelray/"
-                  class="fa fa-instagram socialmediaicons fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- <li><a href="/rock-landing">Rock School</a></li>
-          <li><a href="/lessons.html">Private Lessons</a></li> -->
-
-          <!-- ROAM HANGOUT REMOVED FROM NAVIGATION -->
+          <!-- REMOVE ROAM HANGOUT FROM NAVIGATION -->
           <!-- <li id="web-app"><a href="/topics">roamHangout</a></li> -->
-
-
-          <li><a href="/whyroam.html">What makes ROAM different?</a></li>
-          <!-- <li><a href="/contact">Contact Us</a></li> -->
-
-          <!-- start contact us email block, right before address -->
-          <li class="dropdown">
+          
+           <!-- start contact us email block, right before address -->
+           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">Contact Us<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry" rel="noopener noreferrer" class="btn btn-med btn-blue">Rock School Inquiries</a> -->
-              <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry"
+              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry"
                 class="btn btn-med btn-blue"
                 title="Click to send an email"
                 aria-label="Send email to Rock School Inquiries"
                 target="_blank"
                 rel="noopener noreferrer">
                 Rock School Inquiries
-              </a> -->
+              </a>
 
 
               <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Private%20Lesson%20Inquiry"
                 rel="noopener noreferrer" class="btn btn-med btn-blue">Private Lesson Inquiries
               </a> -->
-                <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Private%20Lesson%20Inquiry"
+                <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Private%20Lesson%20Inquiry"
                 class="btn btn-med btn-blue"
                 title="Click to send an email"
                 aria-label="Send email to Private Lesson Inquiries"
                 target="_blank"
                 rel="noopener noreferrer">
                 Private Lesson Inquiries
-              </a> -->
+              </a>
 
               <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=General%20Inquiry"
                 rel="noopener noreferrer" class="btn btn-med btn-blue">Other/General Inquiries
               </a> -->
-              <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=General%20Inquiry"
+              <a href="mailto:roam.rockofagesmusic@gmail.com?subject=General%20Inquiry"
                 class="btn btn-med btn-blue"
                 title="Click to send an email"
                 aria-label="Send email to Other/General Inquiries"
                 target="_blank"
                 rel="noopener noreferrer">
                 Other/General Inquiries
-              </a> -->
+              </a>
           <!-- end contact us email block, right before address -->
-
               <a href="https://www.google.com/maps/place/114+E+Del+Ray+Ave,+Alexandria,+VA+22301/@38.8264217,-77.0614346,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b11f81bec3ff:0x65fc216c994ff384!8m2!3d38.8264217!4d-77.0592459"
-                target="_blank" rel="noopener noreferrer" class="btn btn-med btn-blue">114 E Del Ray Ave, Alexandria, VA
+                target="_blank" rel="noopener noreferrer" class="btn btn-med btn-dark">114 E Del Ray Ave, Alexandria,
+                VA
                 22301</a>
 
-              <a href="tel:+17038382130" rel="noopener noreferrer" class="btn btn-med btn-blue">(703)
+              <a href="tel:+17038382130" target="_blank" rel="noopener noreferrer" class="btn btn-med btn-dark">(703)
                 838-2130</a>
-                <a href="javascript:void(0);" class="btn btn-med btn-blue" id="emailLink">roam.rockofagesmusic@gmail.com</a>
           </li>
         </ul>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+            aria-expanded="false">Instructor's
+            External Links<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://whileheavenwept.bandcamp.com" target="_blank" rel="noopener noreferrer">Tom
+                Phillips</a></li>
+            <li><a href="https://www.jackkilbymusic.com/" target="_blank" rel="noopener noreferrer">Jack Kilby</a>
+            </li>
+
+          </ul>
         </li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div id="lessons-header" style="text-align: center;
-  padding-bottom: 30px;">
-    <!-- <h1 class="display-1" id="rock_school_h1">Our Bands</h1> -->
-    <!-- <p class="lead">Rock of Ages Music</p> -->
-    <!-- <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry" target="_blank"
-      rel="noopener noreferrer" class="btn btn-lg btn-success">Join a Band
-    </a> -->
-    <a href="javascript:void(0);" class="btn btn-lg btn-success" id="emailLink">Join a Band</a>
-    <!-- <a href="/contact" class="btn btn-lg btn-success">Join a Band</a> -->
-    <!-- <a href="/bandinstructors.html" class="btn btn-lg btn-success">Meet our Instructors</a> -->
 
+
+  <div title="text" id="lessons-header">
+    <h1 class="display-1" id="private-lessons-h1">Join a Band</h1>
+    <p class="lead">Rock of Ages Music</p>
+    <!-- <a href="/contact" class="btn btn-lg btn-success">Schedule Lessons</a> -->
+    <a href="mailto:roam.rockofagesmusic@gmail.com?subject=Rock%20School%20Inquiry" target="_blank"
+      rel="noopener noreferrer" class="btn btn-lg btn-success" id="schedule-lessons-button">Sign Up to Join a Band
+    </a>
   </div>
 
-  <div id="lessons-header-2" style="text-align: center; padding: 10px; font-weight: normal;
-  margin-bottom: auto;">
-    <h3>We are currently setting up for the new semester. Bands will be updated below as they are formed.</h3>
-    <p class="lead" style="text-align: center;
-    padding: 10px; font-weight:100;
-    margin-bottom: auto;"Ages 10 and up, no experience required</p>
-    <p class="lead" style="text-align: center;
-    padding: 10px;
-    margin-bottom: auto;">$1325 per semester </p>
-    <p class="lead" style="text-align: center;
-    padding: 10px;
-    margin-bottom: auto;">Semesters occur twice per year, five months per semester. Typically, September-January and
-      January-June. Each semester ends with a performance, either at a renowned local venue (ROAMfest), or outside in
-      front
-      of ROAM (ROAMstock). Monthly installments available for tuition. </p>
-    <h3>Summer Rock Camps</h3>
-    <p class="lead">1-week sessions $700/$75 off each additional child</p>
+  <div id="lessons-header-2">
+    <p class="lead">We are currently setting up for the new semester. Bands will be updated below as they are formed.</p>
+    <p class="lead">RockSchool = $1325 per semester</p>
+    <p class="lead">Semesters occur twice per year, five months per semester. Typically, September-January and January-June. Each semester ends with a performance, either at a renowned local venue (ROAMfest), or outside in front of ROAM (ROAMstock). Monthly installments available for tuition.</p>
+    <p class="lead">Rock School summer day camp = 1-week sessions $700 </p>
+    <p class="lead">$75 off each additional child</p>
+  </div>
 
-  </div>
-  </div>
-  </div>
-  </div>
-         <!-- poster section  -->
-         <div class="column-lg-12 text-center" style="padding-top:40px;padding-bottom: 40px;">
-          <div class="row">
-            <!-- <img src="/images/ROAMFEST24-Poster.jpg" style="height:240px; width:240px;" alt="Summer Camp"> -->
-            <img src="/images/roam-summer-banner.jpg" style="height:500px; width:500px;" id="second-poster"
-              alt="Summer Camp">
+  
+  
           </div>
         </div>
-
-
       </div>
-    </div>
-  </div>
-  <script>
-    // JavaScript function to copy the email address
-    document.getElementById('emailLink').addEventListener('click', function() {
-        const email = 'roam.rockofagesmusic@gmail.com'; // The email address you want to copy
 
-        // Using the Clipboard API
-        navigator.clipboard.writeText(email).then(function() {
-            console.log('Copying to clipboard was successful!');
-            alert('The email address has been copied to your clipboard! Paste into the "to" field of your preferred email client. '); // Provide feedback to the user (consider a more subtle method for production)
-        }, function(err) {
-            console.error('Could not copy text: ', err);
-        });
-    });
-</script>
+    </div>
+
+  </div>
+  </div>
+  </div>
+
+
 </body>
+
 
 </html>

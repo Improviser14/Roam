@@ -4,6 +4,15 @@
   position: relative;
 }
 
+#private-lessons-h1{
+  text-align: center;
+}
+
+#schedule-lessons-button {
+  margin: 0 auto;
+  display: block; /* Ensure it’s a block element */
+}
+
 #rock_school_h1 {
   padding-bottom: 30px;
 }
